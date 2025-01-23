@@ -1,0 +1,40 @@
+/* Styling the body to center-align content */
+body {
+    font-family: Arial, sans-serif; /* Defines font style */
+    text-align: center; /* Centers text content */
+  }
+  
+  /* Styling the game board container */
+  #board {
+    display: grid; /* Sets the grid layout for the board */
+    grid-template-columns: repeat(3, 100px); /* 3 equal-width columns */
+    grid-template-rows: repeat(3, 100px); /* 3 equal-height rows */
+    gap: 5px; /* Adds spacing between cells */
+    margin: 20px auto; /* Centers the board horizontally */
+    width: max-content; /* Adjusts width based on content */
+  }
+  
+  /* Styling each cell of the game board */
+  .cell {
+    width: 100px; /* Cell width */
+    height: 100px; /* Cell height */
+    display: flex; /* Flexbox to center text */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    border: 1px solid #000; /* Adds black borders */
+    font-size: 2rem; /* Large text size */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  /* Adds hover effect to cells */
+  .cell:hover {
+    background-color: #f0f0f0; /* Light gray on hover */
+  }
+  
+  /* Styling the reset button */
+  button {
+    margin-top: 20px; /* Spacing above the button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Button text size */
+  }
+  

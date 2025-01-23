@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta> tags define character encoding and viewport settings -->
+  <!-- <link> tag includes external stylesheets -->
+  <!-- <title> defines the webpage title -->
+  <!-- The head section contains metadata and linked resources -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main header for the game -->
+  <!-- <div> holds the game board -->
+  <!-- Individual cells are div elements with a class of 'cell' -->
+  <!-- <button> for resetting the game -->
+  <h1>Tic-Tac-Toe</h1>
+  <div id="board">
+    <div class="cell" data-row="0" data-col="0"></div>
+    <div class="cell" data-row="0" data-col="1"></div>
+    <div class="cell" data-row="0" data-col="2"></div>
+    <div class="cell" data-row="1" data-col="0"></div>
+    <div class="cell" data-row="1" data-col="1"></div>
+    <div class="cell" data-row="1" data-col="2"></div>
+    <div class="cell" data-row="2" data-col="0"></div>
+    <div class="cell" data-row="2" data-col="1"></div>
+    <div class="cell" data-row="2" data-col="2"></div>
+  </div>
+  <button id="resetButton">Reset Board</button>
+  <!-- Linking the JavaScript file -->
+  <script src="tictactoe.js"></script>
+</body>
+</html>
