@@ -1,40 +1,58 @@
-/* Styling the body to center-align content */
 body {
-    font-family: Arial, sans-serif; /* Defines font style */
-    text-align: center; /* Centers text content */
+    background-color: #1a1a1a;
+    color: #ff3333;
+    font-family: sans-serif;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
   }
   
-  /* Styling the game board container */
-  #board {
-    display: grid; /* Sets the grid layout for the board */
-    grid-template-columns: repeat(3, 100px); /* 3 equal-width columns */
-    grid-template-rows: repeat(3, 100px); /* 3 equal-height rows */
-    gap: 5px; /* Adds spacing between cells */
-    margin: 20px auto; /* Centers the board horizontally */
-    width: max-content; /* Adjusts width based on content */
+  #gameBoard {
+    border-collapse: collapse;
+    margin: 20px auto;
   }
   
-  /* Styling each cell of the game board */
+  #resetButton {
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #ff3333;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
   .cell {
-    width: 100px; /* Cell width */
-    height: 100px; /* Cell height */
-    display: flex; /* Flexbox to center text */
-    justify-content: center; /* Horizontal centering */
-    align-items: center; /* Vertical centering */
-    border: 1px solid #000; /* Adds black borders */
-    font-size: 2rem; /* Large text size */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 80px;
+    height: 80px;
+    border: 2px solid #ff3333;
+    text-align: center;
+    font-size: 48px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #800080;
   }
   
-  /* Adds hover effect to cells */
-  .cell:hover {
-    background-color: #f0f0f0; /* Light gray on hover */
+  #message {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff3333;
+    text-align: center;
   }
   
-  /* Styling the reset button */
-  button {
-    margin-top: 20px; /* Spacing above the button */
-    padding: 10px 20px; /* Button padding */
-    font-size: 1rem; /* Button text size */
+  #scoreBoard {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+      color: #fff;
+      font-size: 1.2rem;
   }
-  
